@@ -1,4 +1,5 @@
 set nocompatible              " be iMproved, required
+filetype on
 filetype off                  " required
 
 set rtp+=~/.vim/bundle/Vundle.vim
