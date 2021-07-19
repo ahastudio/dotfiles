@@ -1,6 +1,3 @@
-export PATH="$HOME/bin:homebrew/opt/python3/libexec/bin:$PATH"
-export PATH="/opt/homebrew/opt/python3/libexec/bin:$PATH"
-
 eval $(/opt/homebrew/bin/brew shellenv)
 
 export NVM_DIR="$HOME/.nvm"
