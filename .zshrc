@@ -1,0 +1,2 @@
+setopt interactivecomments
+PS1='$ '
