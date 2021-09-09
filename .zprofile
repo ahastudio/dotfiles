@@ -1,4 +1,9 @@
-eval $(/opt/homebrew/bin/brew shellenv)
+export PATH="$HOME/.local/bin:$PATH"
+
+alias docker=podman
+alias docker-compose=podman-compose
+
+eval $(brew shellenv)
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
