@@ -1,8 +1,5 @@
 export PATH="$HOME/.local/bin:$PATH"
 
-alias docker=podman
-alias docker-compose=podman-compose
-
 eval $(brew shellenv)
 
 export NVM_DIR="$HOME/.nvm"
