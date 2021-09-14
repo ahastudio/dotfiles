@@ -2,30 +2,27 @@ set nocompatible              " be iMproved, required
 filetype on
 filetype off                  " required
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-" https://github.com/VundleVim/Vundle.vim
-Plugin 'VundleVim/Vundle.vim'
+" https://github.com/junegunn/vim-plug
+call plug#begin('~/.vim/plugged')
+
 " https://wakatime.com/
-Plugin 'wakatime/vim-wakatime'
+Plug 'wakatime/vim-wakatime'
 " https://github.com/bronson/vim-trailing-whitespace
-Plugin 'bronson/vim-trailing-whitespace'
+Plug 'bronson/vim-trailing-whitespace'
 " https://github.com/fatih/vim-go
-Plugin 'fatih/vim-go'
+Plug 'fatih/vim-go'
+" https://github.com/godlygeek/tabular
+Plug 'godlygeek/tabular'
 " https://github.com/plasticboy/vim-markdown
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
+Plug 'plasticboy/vim-markdown'
 
-call vundle#end()            " required
+call plug#end()
+
+" -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 filetype plugin on
-
-" Brief help
-" :PluginList          - list configured plugins
-" :PluginInstall(!)    - install (update) plugins
-" :PluginSearch(!) foo - search (or refresh cache first) for foo
-" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
 
 set expandtab
 set tabstop=4
