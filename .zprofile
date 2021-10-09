@@ -20,8 +20,6 @@ export LDFLAGS="-L/opt/homebrew/opt/qt@5/lib:$LDFLAFS"
 export CPPFLAGS="-I/opt/homebrew/opt/qt@5/include:$CPPFLAGS"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/qt@5/lib/pkgconfig:$PKG_CONFIG_PATH"
 
-jdk() {
-  version=$1
-  export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
-  java -version
-}
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+export JAVA_HOME=${SDKMAN_CANDIDATES_DIR}/java/current/
