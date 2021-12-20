@@ -12,9 +12,6 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 export PATH="$HOME/.rbenv/shims:$PATH"
 eval "$(rbenv init -)"
 
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
-
 export PATH="/opt/homebrew/opt/qt@5/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/qt@5/lib:$LDFLAFS"
 export CPPFLAGS="-I/opt/homebrew/opt/qt@5/include:$CPPFLAGS"
