@@ -2,15 +2,7 @@ eval $(/opt/homebrew/bin/brew shellenv)
 
 export PATH="$HOME/.local/bin:$PATH"
 
-eval "$(fnm env)"
-
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
-export PATH="$HOME/.rbenv/shims:$PATH"
-eval "$(rbenv init -)"
+eval "$(mise activate zsh)"
 
 export PATH="/opt/homebrew/opt/qt@5/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/qt@5/lib:$LDFLAFS"
